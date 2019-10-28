@@ -6,9 +6,9 @@
  * Online surveys, live chats, contact forms, email lead forms, promo messages,
  * follow and share social media tools - all managed from a single dashboard.
  * Seven of the most important engagement tools in a single time-saving WordPress plugin.
- * Version: 2.2.2
+ * Version: 2.3.0
  * Requires at least: 3.0.1
- * Tested up to: 4.9.1
+ * Tested up to: 5.0.3
  * Author: getsitecontrol
  * Author URI:  https://getsitecontrol.com/
  * License: GPL2

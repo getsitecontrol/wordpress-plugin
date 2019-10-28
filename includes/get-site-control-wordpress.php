@@ -7,7 +7,7 @@ class GetSiteControlWordPress {
 
 
 	const PASSWORD_MIN_LENGTH       = 4;
-	public static $version          = '2.1.1';
+	public static $version          = '2.3.0';
 	public static $registerLink     = 'https://app.getsitecontrol.com/api/v1/users/register';
 	public static $loginLink        = 'https://app.getsitecontrol.com/api/v1/users/login';
 	public static $sitesLink        = 'https://app.getsitecontrol.com/api/v1/sites/own';

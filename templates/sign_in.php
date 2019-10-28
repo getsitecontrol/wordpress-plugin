@@ -51,15 +51,9 @@
 					</fieldset>
 				</form>
 			</div>
-			<p class="form-connect-with">Or connect with</p>
+			<p class="form-connect-with">Or sign in with</p>
 			<div class="form-social-footer">
 				<div class="social-login">
-					<a tabindex="4"
-					   href="<?php echo esc_url( $options['fb_social_link'] ); ?>"
-					   class="button social-login-button social-login-facebook">
-						<span class="icon icon_facebook"></span>
-						Facebook
-					</a>
 					<a tabindex="5"
 					   href="<?php echo esc_url( $options['google_social_link'] ); ?>"
 					   class="button social-login-button social-login-google">
