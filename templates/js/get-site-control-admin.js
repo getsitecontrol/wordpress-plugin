@@ -1,8 +1,6 @@
 'use strict';
 
 jQuery(document).ready(function() {
-
-
     /**
      *
      * Sign Up and Sign In pages
@@ -11,6 +9,7 @@ jQuery(document).ready(function() {
     if (jQuery('[data-auth]').length) {
         var formSender = {
             api_key: null,
+            api_domain: null,
             errorMessages: {
                 name: {
                     required: 'Specify your name',
@@ -40,7 +39,7 @@ jQuery(document).ready(function() {
             send: sendForm,
             markSending: markSendingForm,
             renderErrors: renderErrorsForm,
-            saveApi: saveApiKey
+            saveApiInfo: saveApiInfo
         };
 
         jQuery('[data-form-validate]').submit(function() {
@@ -74,7 +73,8 @@ jQuery(document).ready(function() {
             e.data.user.api_key
         ) {
             formSender.api_key = e.data.user.api_key;
-            formSender.saveApi();
+            formSender.api_domain = extract_domain(e.data.user.login_url);
+            formSender.saveApiInfo();
         }
     }
 
@@ -189,7 +189,8 @@ jQuery(document).ready(function() {
             success: function(data) {
                 if (data.api_key) {
                     self.api_key = data.api_key;
-                    self.saveApi();
+                    self.api_domain = extract_domain(data.login_url);
+                    self.saveApiInfo();
                 } else {
                     self.errors.stack['__all__'] = 'Oops! Something wrong. Api key cannot be empty.';
                     self.errors.count++;
@@ -254,11 +255,10 @@ jQuery(document).ready(function() {
         }
     }
 
-
     /**
      * Save API key
      */
-    function saveApiKey() {
+    function saveApiInfo() {
         var self = this;
 
         if (self.api_key) {
@@ -268,7 +268,8 @@ jQuery(document).ready(function() {
                 dataType: 'json',
                 data: {
                     action: typeof GSC_OPTIONS !== 'undefined' ? GSC_OPTIONS.success_action : '',
-                    gsc_api_key: self.api_key
+                    gsc_api_key: self.api_key,
+                    gsc_api_domain: self.api_domain,
                 },
                 success: function(data) {
                     if (data.redirect_link) {
@@ -290,9 +291,6 @@ jQuery(document).ready(function() {
     }
 
 
-
-
-
     /**
      *
      * Manage Widgets page
@@ -301,10 +299,10 @@ jQuery(document).ready(function() {
     var manageListView = jQuery('[data-manage]');
     if (manageListView.length) {
         var manageWidgets = {
-            update_widget_action: null,
+            site_selected_action: null,
             api_url: null,
             api_key: null,
-            widget_id: null,
+            site_id: null,
             url_exists: false,
             sites: [],
             select: null,
@@ -334,15 +332,13 @@ jQuery(document).ready(function() {
         this.selected_block = jQuery('.selected-toggled-block');
         this.manage_link = jQuery('.get-site-control .manage-widget-link');
         this.add_site_link = jQuery('.get-site-control .add-site');
-        this.update_widget_action = typeof GSC_OPTIONS !== 'undefined' ? GSC_OPTIONS.update_widget_action : null;
+        this.site_selected_action = typeof GSC_OPTIONS !== 'undefined' ? GSC_OPTIONS.site_selected_action : null;
         this.api_url = typeof GSC_OPTIONS !== 'undefined' ? GSC_OPTIONS.api_url : null;
         this.api_key = typeof GSC_OPTIONS !== 'undefined' ? GSC_OPTIONS.api_key : null;
-        this.widget_id = typeof GSC_OPTIONS !== 'undefined' ? GSC_OPTIONS.widget_id : null;
-        this.widget_link = typeof GSC_OPTIONS !== 'undefined' ? GSC_OPTIONS.widget_link : null;
+        this.site_id = typeof GSC_OPTIONS !== 'undefined' ? GSC_OPTIONS.site_id : null;
+        this.script = typeof GSC_OPTIONS !== 'undefined' ? GSC_OPTIONS.script : null;
         this.setSites();
     }
-
-
     /**
      * Get list of sites via API
      */
@@ -389,8 +385,6 @@ jQuery(document).ready(function() {
             }
         });
     }
-
-
     /**
      * Render list of sites
      */
@@ -405,7 +399,7 @@ jQuery(document).ready(function() {
             for (var i=0; i<this.sites.length; i++) {
                 options +=
                     '<option' +
-                        (this.widget_id == this.sites[i].id ? ' selected' : '') + ' value="' + this.sites[i].id + '">' +
+                        (this.script == this.sites[i].script_rendered_url ? ' selected' : '') + ' value="' + this.sites[i].id + '">' +
                         this.sites[i].url +
                     '</option>';
             }
@@ -428,12 +422,10 @@ jQuery(document).ready(function() {
         this.add_site_link.removeClass('disabled');
         this.changeManageLink(true);
 
-        if (GSC_OPTIONS.widget_id != this.widget_id) {
+        if (GSC_OPTIONS.script != this.script) {
             this.saveWidget();
         }
     }
-
-
     /**
      * Change link for manage button
      */
@@ -445,24 +437,22 @@ jQuery(document).ready(function() {
             for (var i=0; i<this.sites.length; i++) {
                 if (this.sites[i].id == currentSite) {
                     manage_link_exists = true;
-                    this.widget_id = this.sites[i].id;
-                    this.widget_link = this.sites[i].script_rendered_url;
+                    this.site_id = this.sites[i].id;
+                    this.script = this.sites[i].script_rendered_url;
                     this.manage_link.attr('href', this.sites[i].manage_link).removeClass('disabled');
                     break;
                 }
             }
 
             if (!manage_link_exists) {
-                if (this.widget_id && this.widget_link) {
-                    this.widget_id = null;
-                    this.widget_link = null;
+                if (this.site_id && this.script) {
+                    this.site_id = null;
+                    this.script = null;
                 }
                 this.manage_link.attr('href', 'javascript:void(0);').addClass('disabled');
             }
         }
     }
-
-
     /**
      * Save widget's settings
      */
@@ -474,10 +464,9 @@ jQuery(document).ready(function() {
             url: ajaxurl,
             dataType: 'json',
             data: {
-                action: self.update_widget_action,
-                gsc_update_widget: true,
-                gsc_widget_id: self.widget_id,
-                gsc_widget_link: self.widget_link
+                action: self.site_selected_action,
+                gsc_script: self.script,
+                gsc_site_id: self.site_id,
             },
             success: function(data) {
                 if (!!data.error) {
@@ -582,5 +571,9 @@ jQuery(document).ready(function() {
         url1 = url1.replace('http://', '').replace('https://', '');
         url2 = url2.replace('http://', '').replace('https://', '');
         return url1 == url2;
+    }
+
+    function extract_domain(url){
+        return url.split('//')[1].split('/')[0]
     }
 });

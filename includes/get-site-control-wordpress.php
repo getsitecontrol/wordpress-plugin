@@ -1,34 +1,35 @@
 <?php
 
 /**
- * Class GetSiteControlWordPress
+ * Class GetsitecontrolWordPress
  */
-class GetSiteControlWordPress {
+class GetsitecontrolWordPress {
 
 
-	const PASSWORD_MIN_LENGTH       = 4;
-	public static $version          = '2.3.0';
-	public static $registerLink     = 'https://app.getsitecontrol.com/api/v1/users/register';
-	public static $loginLink        = 'https://app.getsitecontrol.com/api/v1/users/login';
-	public static $sitesLink        = 'https://app.getsitecontrol.com/api/v1/sites/own';
-	public static $autoLoginLink    = 'https://app.getsitecontrol.com/api/v1/users/autologin';
-	public static $fbSocialLink     = 'https://app.getsitecontrol.com/api/v1/socialauth-begin/facebook/?mode=signup-popup';
-	public static $googleSocialLink = 'https://app.getsitecontrol.com/api/v1/socialauth-begin/google-oauth2/?mode=signup-popup';
+	public static $version          = '2.4.0';
+	public static $registerLink     = 'https://dash.getsitecontrol.com/api/v1/users/register';
+	public static $loginLink        = 'https://dash.getsitecontrol.com/api/v1/users/login?dual=1';
+	public static $googleSigninLink = 'https://dash.getsitecontrol.com/api/v1/socialauth-begin/google-oauth2/?mode=signin-popup&dual=1';
+	public static $googleSignupLink = 'https://dash.getsitecontrol.com/api/v1/socialauth-begin/google-oauth2/?mode=signup-popup';
+
+	public static $sitesLink        = 'https://{{API_DOMAIN}}/api/v1/sites/own';
+	public static $autoLoginLink    = 'https://{{API_DOMAIN}}/api/v1/users/autologin';
+
 	public static $settings         = array();
 	public static $errors           = array();
 	public static $actions          = array(
 		'index' => array(
 			'slug'     => 'getsitecontrol',
 			'function' => 'action_admin_menu_page',
-			'name'     => 'GetSiteControl',
-			'title'    => 'GetSiteControl for WordPress settings',
+			'name'     => 'Getsitecontrol',
+			'title'    => 'Getsitecontrol for WordPress settings',
 		),
 		'auth'  => array(
 			'sign-out' => array(
 				'slug'     => 'getsitecontrol_sign_out',
 				'function' => 'action_admin_menu_sign_out',
 				'name'     => 'Sign out',
-				'title'    => 'Sign out - GetSiteControl',
+				'title'    => 'Sign out - Getsitecontrol',
 			),
 		),
 		'guest' => array(
@@ -36,13 +37,13 @@ class GetSiteControlWordPress {
 				'slug'     => 'getsitecontrol_sign_in',
 				'function' => 'action_admin_menu_sign_in',
 				'name'     => 'Sign in',
-				'title'    => 'Sign in to GetSiteControl',
+				'title'    => 'Sign in to Getsitecontrol',
 			),
 			'sign-up' => array(
 				'slug'     => 'getsitecontrol_sign_up',
 				'function' => 'action_admin_menu_sign_up',
 				'name'     => 'Sign up',
-				'title'    => 'Sign up to GetSiteControl',
+				'title'    => 'Sign up to Getsitecontrol',
 			),
 		),
 
@@ -57,7 +58,7 @@ class GetSiteControlWordPress {
 	/**
 	 * Get instance
 	 *
-	 * @return GetSiteControlWordPress|null
+	 * @return GetsitecontrolWordPress|null
 	 */
 	public static function init() {
 		if ( is_null( self::$getSiteControl ) ) {
@@ -82,18 +83,18 @@ class GetSiteControlWordPress {
 			add_action( 'admin_menu', array( __CLASS__, 'admin_menu_add' ) );
 			add_action( 'admin_menu', array( __CLASS__, 'admin_sub_menu_add' ) );
 
-			add_action( 'wp_ajax_gsc_post_update_widget', array( __CLASS__, 'gsc_post_update_widget' ) );
+			add_action( 'wp_ajax_gsc_post_site_select', array( __CLASS__, 'gsc_post_site_select' ) );
 			add_action( 'wp_ajax_gsc_post_clear_api_key', array( __CLASS__, 'gsc_post_clear_api_key' ) );
 			add_action( 'wp_ajax_gsc_post_sign_in', array( __CLASS__, 'gsc_post_sign_in' ) );
+
 			add_action( 'admin_enqueue_scripts', array( __CLASS__, 'admin_scripts' ) );
 		} else {
 			add_action( 'wp_enqueue_scripts', array( __CLASS__, 'add_script' ) );
-			add_action( 'wp_head', array( __CLASS__, 'add_inline_script' ) );
 		}
 	}
 
 	/**
-	 * Get GetSiteControl settings
+	 * Get Getsitecontrol settings
 	 *
 	 * @return mixed
 	 */
@@ -102,19 +103,29 @@ class GetSiteControlWordPress {
 	}
 
 	/**
-	 * Set GetSiteControl settings
+	 * Set Getsitecontrol settings
 	 *
 	 * @param $gsc_settings
 	 */
 	public static function install( $gsc_settings ) {
 		if ( empty( $gsc_settings ) ) {
 			$gsc_settings = array(
-				'api_key'     => null,
-				'version'     => self::$version,
-				'widget_id'   => null,
-				'widget_link' => null,
+				'api_key'           => null,
+				'api_domain'        => null,
+				'version'           => self::$version,
+				'script'            => null,
+				'site_id'           => null,
 			);
 			add_option( 'get_site_control_settings', $gsc_settings );
+		}
+
+		// support old deprecated settings
+        if ( ! empty( $gsc_settings['widget_link'] ) ) {
+		    $gsc_settings['script'] = $gsc_settings['widget_link'];
+		    $gsc_settings['site_id'] = $gsc_settings['widget_id'];
+		}
+		if ( empty( $gsc_settings['api_domain'] ) ){
+		    $gsc_settings['api_domain'] = 'app.getsitecontrol.com';
 		}
 
 		if ( self::$version !== $gsc_settings['version'] ) {
@@ -123,7 +134,7 @@ class GetSiteControlWordPress {
 	}
 
 	/**
-	 * Update GetSiteControl settings
+	 * Update Getsitecontrol settings
 	 *
 	 * @param $gsc_settings
 	 *
@@ -184,21 +195,12 @@ class GetSiteControlWordPress {
 	 * Add script before </body>
 	 */
 	public static function add_script() {
-		if ( ! empty( self::$settings['widget_link'] ) ) {
-			wp_enqueue_script( 'gsc_widget_script', self::$settings['widget_link'], '', self::$version, true );
+		if ( ! empty( self::$settings['script'] ) ) {
+			wp_enqueue_script( 'gsc_widget_script', self::$settings['script'], '', self::$version, true );
 			add_filter( 'script_loader_tag', array( __CLASS__, 'filter_script_loader_tag' ), 10, 2 );
 		}
 	}
 
-	public static function add_inline_script() {
-		if ( ! empty( self::$settings['widget_link'] ) ) {
-			if ( function_exists( 'wp_add_inline_script' ) ) {
-				wp_add_inline_script( 'gsc_widget_script', 'window._gscq = window._gscq || []', 'before' );
-			} else {
-				echo '<script>window._gscq = window._gscq || []</script>';
-			}
-		}
-	}
 
 	/**
 	 * Filter script loader
@@ -222,18 +224,21 @@ class GetSiteControlWordPress {
 	public static function action_admin_menu_page() {
 		self::check_access_die();
 
+        $sitesLink = str_replace("{{API_DOMAIN}}", self::$settings['api_domain'], self::$sitesLink);
+        $autoLoginLink = str_replace("{{API_DOMAIN}}", self::$settings['api_domain'], self::$autoLoginLink);
+
 		$options                         = self::$settings;
-		$options['update_widget_action'] = 'gsc_post_update_widget';
+		$options['site_selected_action'] = 'gsc_post_site_select';
 		$options['clear_api_key_action'] = 'gsc_post_clear_api_key';
-		$options['api_url']              = self::$sitesLink;
-		$options['manage_site_link']     = self::$autoLoginLink . '?api_key=' .
+		$options['api_url']              = $sitesLink;
+		$options['manage_site_link']     = $autoLoginLink . '?api_key=' .
 										   self::$settings['api_key'] . '&next=/#/dashboard/sites/<SITE_ID>/widgets/list';
 
 		self::render_template(
 			'index',
 			array(
 				'options'       => $options,
-				'add_site_link' => self::$autoLoginLink . '?api_key=' . self::$settings['api_key'] . '&next=/#/account/sites',
+				'add_site_link' => $autoLoginLink . '?api_key=' . self::$settings['api_key'] . '&next=/#/account/sites',
 			)
 		);
 	}
@@ -276,12 +281,12 @@ class GetSiteControlWordPress {
 	}
 
 	/**
-	 * Processing update widget id form
+	 * Processing update site id form
 	 */
-	public static function gsc_post_update_widget() {
-		if ( self::post( 'gsc_update_widget' ) && self::check_access() && ! empty( self::$settings['api_key'] ) ) {
-			self::$settings['widget_id']   = self::post( 'gsc_widget_id', null );
-			self::$settings['widget_link'] = self::post( 'gsc_widget_link', null );
+	public static function gsc_post_site_select() {
+		if ( self::check_access() && ! empty( self::$settings['api_key'] ) ) {
+			self::$settings['script'] = self::post( 'gsc_script', null );
+			self::$settings['site_id'] = self::post( 'gsc_site_id', null );
 			echo wp_json_encode(
 				array(
 					'error' => ! self::update( self::$settings ),
@@ -329,6 +334,7 @@ class GetSiteControlWordPress {
 	public static function gsc_post_clear_api_key() {
 		if ( self::post( 'gsc_clear_api_key' ) && self::check_access() ) {
 			self::$settings['api_key'] = null;
+			self::$settings['gsc_api_domain'] = null;
 			echo wp_json_encode(
 				array(
 					'error'         => ! self::update( self::$settings ),
@@ -362,8 +368,7 @@ class GetSiteControlWordPress {
 		'&timezone=' . rawurlencode( $options['timezone'] ) .
 		'&timezone_name=' . rawurlencode( $options['timezone_name'] ) .
 		'&utm_campaign=WordpressPlugin&utm_medium=plugin';
-		$options['fb_social_link']     = self::$fbSocialLink . $socialParams;
-		$options['google_social_link'] = self::$googleSocialLink . $socialParams;
+		$options['google_social_link'] = self::$googleSignupLink . $socialParams;
 
 		self::render_template(
 			'sign_up',
@@ -385,8 +390,7 @@ class GetSiteControlWordPress {
 		$options['success_action']     = 'gsc_post_sign_in';
 		$options['form_type']          = 'sign-in';
 		$options['api_url']            = self::$loginLink;
-		$options['fb_social_link']     = self::$fbSocialLink;
-		$options['google_social_link'] = self::$googleSocialLink;
+		$options['google_social_link'] = self::$googleSigninLink;
 
 		$data['email'] = get_option( 'admin_email' );
 
@@ -406,6 +410,7 @@ class GetSiteControlWordPress {
 	public static function gsc_post_sign_in() {
 		if ( self::post( 'gsc_api_key' ) && self::check_access() ) {
 			self::$settings['api_key'] = self::post( 'gsc_api_key' );
+			self::$settings['api_domain'] = self::post( 'gsc_api_domain' );
 			self::update( self::$settings );
 			echo wp_json_encode(
 				array(

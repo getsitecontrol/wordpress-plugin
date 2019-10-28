@@ -11,7 +11,7 @@
 <div class="wrap get-site-control get-site-control-view-loading" data-manage="">
 	<div class="heading">
 		<h2 class="manage__title">Create and manage widgets</h2>
-		<p class="manage__text">Open your GetSiteControl dashboard to create and edit widgets for your website.</p>
+		<p class="manage__text">Open your Getsitecontrol dashboard to create and edit widgets for your website.</p>
 	</div>
 
 	<div class="block block-sign-up-form block-sign-up-form_tint-action odd">
