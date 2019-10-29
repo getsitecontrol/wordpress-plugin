@@ -6,7 +6,7 @@
 class GetsitecontrolWordPress {
 
 
-	public static $version          = '2.4.0';
+	public static $version          = '2.5.0';
 	public static $registerLink     = 'https://dash.getsitecontrol.com/api/v1/users/register';
 	public static $loginLink        = 'https://dash.getsitecontrol.com/api/v1/users/login?dual=1';
 	public static $googleSigninLink = 'https://dash.getsitecontrol.com/api/v1/socialauth-begin/google-oauth2/?mode=signin-popup&dual=1';
@@ -156,7 +156,7 @@ class GetsitecontrolWordPress {
 			'manage_options',
 			self::$actions['index']['slug'],
 			array( __CLASS__, self::$actions['index']['function'] ),
-			GSC_URL . 'templates/images/logo@2x.png'
+			GSC_URL . 'templates/images/gsc-logo-white.png'
 		);
 	}
 
@@ -334,7 +334,7 @@ class GetsitecontrolWordPress {
 	public static function gsc_post_clear_api_key() {
 		if ( self::post( 'gsc_clear_api_key' ) && self::check_access() ) {
 			self::$settings['api_key'] = null;
-			self::$settings['gsc_api_domain'] = null;
+			self::$settings['api_domain'] = null;
 			echo wp_json_encode(
 				array(
 					'error'         => ! self::update( self::$settings ),

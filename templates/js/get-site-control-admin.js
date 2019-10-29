@@ -376,12 +376,8 @@ jQuery(document).ready(function() {
                 self.render();
             },
             error: function(data) {
-                if (data.status == 401) {
-                    self.clearApiKey();
-                } else {
-                    console.error('response', data);
-                    alert("Oops! Something wrong. It's impossible to get list of sites!");
-                }
+                console.error('response', data);
+                alert("Oops! Something wrong. It's impossible to get list of sites!");
             }
         });
     }
