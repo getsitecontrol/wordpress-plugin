@@ -13,7 +13,7 @@ jQuery(document).ready(function() {
             errorMessages: {
                 name: {
                     required: 'Specify your name',
-                    valid: 'PEnter a valid name'
+                    valid: 'Enter a valid name'
                 },
                 email: {
                     required: 'Specify your email address',
@@ -50,11 +50,17 @@ jQuery(document).ready(function() {
             return false;
         });
 
-        jQuery('[data-close]').click(function() {
+
+        jQuery('[form]').click(function() {
             var target = '.' + jQuery(this).data('close');
             jQuery(target).removeClass('show');
         });
 
+        jQuery('.form-control').on('input', function() {
+            jQuery(this).parent().removeClass('has-error');
+            jQuery('.form-contents').removeClass('has-error');
+            jQuery('.form-contents').find('.form-validation-message').removeClass('show');
+        });
 
         jQuery('.social-signin__btn, .social-login-button').click(function(e) {
             window.open( jQuery(this).attr('href'), '_blank', 'location=yes,scrollbars=yes,status=yes');
@@ -79,29 +85,29 @@ jQuery(document).ready(function() {
     }
 
     function findFieldsForm() {
-        this.fields.name = this.form.find('[name="name"]');
+        // this.fields.name = this.form.find('[name="name"]');
         this.fields.email = this.form.find('[name="email"]');
         this.fields.password = this.form.find('[name="password"]');
-        this.fields.site = this.form.find('[name="site"]');
+        // this.fields.site = this.form.find('[name="site"]');
     }
 
     function validateForm() {
         this.errors.stack = {};
         this.errors.count = 0;
 
-        if (this.fields.name.length) {
-            if ( this.fields.name.val().length == 0 ) {
-                this.errors.stack.name = [
-                    this.errorMessages.name.required
-                ];
-                this.errors.count++;
-            } else if ( !validateName(this.fields.name.val()) ) {
-                this.errors.stack.name = [
-                    this.errorMessages.name.valid
-                ];
-                this.errors.count++;
-            }
-        }
+        // if (this.fields.name.length) {
+        //     if ( this.fields.name.val().length == 0 ) {
+        //         this.errors.stack.name = [
+        //             this.errorMessages.name.required
+        //         ];
+        //         this.errors.count++;
+        //     } else if ( !validateName(this.fields.name.val()) ) {
+        //         this.errors.stack.name = [
+        //             this.errorMessages.name.valid
+        //         ];
+        //         this.errors.count++;
+        //     }
+        // }
 
         if (this.fields.email.length) {
             if ( this.fields.email.val().length == 0 ) {
@@ -131,25 +137,25 @@ jQuery(document).ready(function() {
             }
         }
 
-        if (this.fields.site.length) {
-            var site = this.fields.site.val();
+        // if (this.fields.site.length) {
+        //     var site = this.fields.site.val();
 
-            if (!/^((http|https):\/\/)/.test(site)) {
-                this.fields.site.val( window.location.protocol + '//' + site );
-            }
+        //     if (!/^((http|https):\/\/)/.test(site)) {
+        //         this.fields.site.val( window.location.protocol + '//' + site );
+        //     }
 
-            if ( this.fields.site.val().length == 0 ) {
-                this.errors.stack.site = [
-                    this.errorMessages.site.required
-                ];
-                this.errors.count++;
-            } else if ( !validateURL(this.fields.site.val()) ) {
-                this.errors.stack.site = [
-                    this.errorMessages.site.valid
-                ];
-                this.errors.count++;
-            }
-        }
+        //     if ( this.fields.site.val().length == 0 ) {
+        //         this.errors.stack.site = [
+        //             this.errorMessages.site.required
+        //         ];
+        //         this.errors.count++;
+        //     } else if ( !validateURL(this.fields.site.val()) ) {
+        //         this.errors.stack.site = [
+        //             this.errorMessages.site.valid
+        //         ];
+        //         this.errors.count++;
+        //     }
+        // }
 
         this.renderErrors();
     }
@@ -225,21 +231,21 @@ jQuery(document).ready(function() {
     }
 
     function renderErrorsForm() {
-        var generalNotification = jQuery('.gsc-page-notification');
+        var generalNotification = jQuery('.form-contents');
 
-        generalNotification.removeClass('show');
+        generalNotification.removeClass('has-error');
         this.form.find('.form-validation-message').removeClass('show');
 
         for (var field in this.fields) {
             if (this.fields.hasOwnProperty(field)) {
                 if (this.errors.stack.hasOwnProperty(field) && this.errors.stack[field].length) {
-                    this.fields[field].closest('.field-row')
+                    this.fields[field].closest('.form-wrapper')
                         .addClass('has-error')
                         .find('.form-validation-message')
                         .text(this.errors.stack[field][0])
                         .addClass('show')
                 } else {
-                    this.fields[field].closest('.field-row')
+                    this.fields[field].closest('.form-wrapper')
                         .removeClass('has-error')
                         .addClass('has-success')
                         .find('.form-validation-message')
@@ -249,8 +255,10 @@ jQuery(document).ready(function() {
         }
 
         if (this.errors.stack['__all__']) {
+            console.log("all");
             generalNotification
-                .addClass('show').find('.form-validation-message')
+                .addClass('has-error')
+                .find('.form-validation-general').addClass('show')
                 .html( this.errors.stack['__all__'][0]);
         }
     }
@@ -330,8 +338,8 @@ jQuery(document).ready(function() {
     function initList() {
         this.select = jQuery('#widget');
         this.selected_block = jQuery('.selected-toggled-block');
-        this.manage_link = jQuery('.get-site-control .manage-widget-link');
-        this.add_site_link = jQuery('.get-site-control .add-site');
+        this.manage_link = jQuery('.getsitecontrol .manage-widget-link');
+        this.add_site_link = jQuery('.getsitecontrol .add-site');
         this.site_selected_action = typeof GSC_OPTIONS !== 'undefined' ? GSC_OPTIONS.site_selected_action : null;
         this.api_url = typeof GSC_OPTIONS !== 'undefined' ? GSC_OPTIONS.api_url : null;
         this.api_key = typeof GSC_OPTIONS !== 'undefined' ? GSC_OPTIONS.api_key : null;
@@ -352,7 +360,7 @@ jQuery(document).ready(function() {
                 api_key: self.api_key
             },
             complete: function () {
-                manageListView.removeClass('get-site-control-view-loading')
+                manageListView.removeClass('getsitecontrol-view-loading')
             },
             success: function(data) {
                 if (data.objects && data.objects.length) {
@@ -406,16 +414,17 @@ jQuery(document).ready(function() {
                 // Change text for multiple site case
                 jQuery('.manage__title').text('Select website');
                 jQuery('.manage__text').html('Choose the necessary website from the list or add a new one.');
+                this.add_site_link.addClass('disabled');
             }
         } else {
             jQuery('.gotodashboard-block, .select-website-block').hide();
             jQuery('.manage__title').text('Add Site');
             jQuery('.manage__text').html("You haven't added any websites yet.<br/> Please add the website you want to create widgets for.");
+            this.add_site_link.removeClass('disabled');
         }
 
         this.select.html(options);
         this.select.attr('disabled', false);
-        this.add_site_link.removeClass('disabled');
         this.changeManageLink(true);
 
         if (GSC_OPTIONS.script != this.script) {

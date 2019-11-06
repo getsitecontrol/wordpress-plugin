@@ -5,66 +5,43 @@
  * @var $options array
  */
 ?>
-
-<div class="wrap get-site-control" data-auth="">
-	<div class="heading">
-		<h2>Sign In</h2>
-	</div>
-
-	<div class="block block-sign-up-form block-sign-up-form_tint-action odd">
+<div class="wrap getsitecontrol" data-auth="">
+	<div class="block-login-form">
 		<section class="sign-up-form">
-			<div class="form-contents tint-action">
-				<div class="page-notification-container">
-					<div class="gsc-page-notification page-notification page-notification_error">
-						<button type="button" class="close close_btn" data-close="gsc-page-notification">×</button>
-						<div class="form-validation-message"></div>
-					</div>
-				</div>
-
-				<form novalidate
-					  method="post"
-					  action="<?php echo esc_url( $options['api_url'] ); ?>"
-					  data-form-validate="">
-					<fieldset class="form-group">
-						<div class="form-wrapper">
-							<div class="field-row">
-								<span class="f-icon f-icon-email"></span>
-								<input tabindex="1" class="form-control" title="Enter your email" required=""
-									   maxlength="200" placeholder="Email Address" name="email" type="email"
-									   value="<?php echo ! empty( $data['email'] ) ? esc_attr( $data['email'] ) : ''; ?>">
-								<span class="form-validation-message"></span>
-							</div>
-							<div class="field-row">
-								<span class="f-icon f-icon-password"></span>
-								<input tabindex="2" class="form-control" title="Enter your password"
-									   maxlength="200" placeholder="Password" name="password" type="password">
-								<span class="form-validation-message"></span>
-							</div>
-						</div>
-
-						<button tabindex="3" class="button button-fill-active" type="submit"
-								data-sending-text="Sending data..."
-								data-text="Sign In"
-						>
-							Sign In
-						</button>
-					</fieldset>
-				</form>
-			</div>
-			<p class="form-connect-with">Or sign in with</p>
+			<h1>Log in</h1>
 			<div class="form-social-footer">
 				<div class="social-login">
-					<a tabindex="5"
-					   href="<?php echo esc_url( $options['google_social_link'] ); ?>"
-					   class="button social-login-button social-login-google">
-						<span class="icon icon_google"></span>
-						Google
+					<a href="<?php echo esc_url( $options['google_social_link'] ); ?>" class=" social-login-button social-login-google">
+						<img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/google_icon_back.svg'; ?>">
+						<span>Log in with Google →</span>
 					</a>
 				</div>
 			</div>
-			<p class="form-have-account">
-				New user?&nbsp; <a href="<?php echo esc_url( $sign_up_link ); ?>" tabindex="6">Create an account</a>
-			</p>
+			<p class="form-connect-with">OR</p>
+			<div class="form-contents">
+				<form action="<?php echo esc_url( $options['api_url'] ); ?>" method="post" data-type="signin" novalidate="" data-form-validate="">
+					<fieldset class="form-group">
+						<div class="form-wrapper">
+							<input class="form-control" title="Enter your email" required="" maxlength="200" placeholder="Email" type="email" name="email" value="<?php echo ! empty( $data['email'] ) ? esc_attr( $data['email'] ) : ''; ?>">
+							<span class="form-validation-message"></span>
+						</div>
+						<div class="form-wrapper">
+							<input class="form-control" title="Enter your password" required="" maxlength="200" placeholder="Password" type="password" name="password">
+							<span class="form-validation-message"></span>
+						</div>
+					</fieldset>
+					<button class="button-submit"
+					data-sending-text="Logging in..."
+					data-text="Log in with email →" type="submit">Log in with email →</button>
+				</form>
+			<div class="form-validation-message form-validation-general"></div>
+			</div>
+
+			<div class="form-legal">
+				<a href="https://getsitecontrol.com/reset/">Reset password</a>
+				or&nbsp;<a href="<?php echo esc_url( $sign_up_link ); ?>" tabindex="6">create an account</a>
+			</div>
+
 		</section>
 	</div>
 </div>
