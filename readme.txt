@@ -1,6 +1,6 @@
-=== Getsitecontrol - WordPress Popups, Email Optin Forms, Website Surveys & Live Chat Widget ===
+=== Getsitecontrol - WordPress Popups, Email Optin Forms, Contact Forms, Website Surveys & CTA Popups ===
 Contributors: getsitecontrol
-Tags: wordpress popup, popup plugin, optin popup, email form, newsletter popup, form builder, contact form, notification bar, top bar, floating bar, survey form, live chat, chat widget, marketing, email marketing, woocommerce
+Tags: wordpress popup, popup plugin, optin popup, email form, newsletter popup, form builder, contact form, notification bar, top bar, floating bar, survey form, marketing, email marketing, woocommerce
 Requires at least: 3.0.1
 Tested up to: 5.2.4
 Stable tag: trunk
@@ -8,13 +8,13 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
-Getsitecontrol is an ultimate WordPress popup plugin. Collect emails, conduct online surveys, let website visitors reach you via a contact form or a live chat. Increase ROI with exit popups, slide-ins, and notification bars.
+Getsitecontrol is an ultimate WordPress popup plugin. Collect emails, conduct online surveys, let website visitors reach you via a contact form, or promote your content with attention-grabbing modals. Increase ROI with exit popups, slide-ins, and notification bars.
 
 
 == Description ==
 
 
-Getsitecontrol is your go-to plugin for any type of WordPress Popups. Easily create an email subscription form, a contact form, a survey form, or a live chat widget for your website. Add exit-intent popups, floating notification bars, and slide-ins to deliver your call-to-action.
+Getsitecontrol is your go-to plugin for any type of WordPress Popups. Easily create an email subscription form, a contact form, a survey form, or a notification modal for your site. Add exit-intent popups, floating notification bars, and slide-ins to deliver your call-to-action.
 
 
 The most versatile WordPress Popup Plugin you’ve ever tried:
@@ -40,7 +40,7 @@ Use templates and custom fields to create a contact form that meets your require
 **LEARN MORE ABOUT YOUR AUDIENCE WITH ONLINE SURVEYS**
 
 
-Create website surveys to receive feedback on new product features, collect suggestions, evaluate your marketing strategies or find out why people abandon a particular webpage. Build quick polls or multi-page questionnaires using the advanced skip logic technology.
+Create website surveys to receive feedback on new product features, collect suggestions, evaluate your marketing strategies or find out why people abandon a particular webpage. Build quick polls or multi-page questionnaires, use ready-made templates or create custom forms.
 
 
 
@@ -49,14 +49,6 @@ Create website surveys to receive feedback on new product features, collect sugg
 
 
 Place eye-catching widgets with information about special offers, website updates, or anything noteworthy to encourage user engagement. It’s a great way to promote content, optimize conversions, and prevent cart abandonment.
-
-
-
-
-**PROVIDE REAL-TIME COMMUNICATION WITH A LIVE CHAT**
-
-
-Help website visitors get answers to their sales or technical questions instantly with a simple chat widget. Connect it to Slack and respond to the incoming messages even on-the-go.
 
 
 
@@ -73,13 +65,13 @@ Getsitecontrol easily integrates with 25+ email marketing solutions including Ma
 
 
 - **On-page behavior triggers**: display popups based on how long a visitor has spent on a webpage, how much they have scrolled down, or other custom action-based parameters.
-- **Audience targeting**: choose who should see each widget. Target visitors by their language, location, device, browser, OS, traffic source, IP or UTM parameters. Create personalized messages by combining several parameters for different audiences.
+- **Audience targeting**: choose who should see each widget. Target visitors by their language, location, device, browser, OS, traffic source, or UTM parameters. Create personalized messages by combining several parameters for different audiences.
 - **Exit-intent technology**: show popups right before a visitor abandons a webpage. Use this feature to offer a special last-minute deal or display a website exit survey.
-- **Integrations**: connect Getsitecontrol to any email marketing app, Google Analytics, Slack, and Zapier.
-- **Autoresponder** – send automated emails to those who subscribe to your newsletter, interact with a contact form, or fill out a survey.
-- **9 webpage positions for each widget**: decide whether a widget should appear as a modal popup, a floating bar at the top or the bottom of a page, a slide-in, a side button, or a tab.
-- **Widget customization**: make use of the image gallery, custom fields, and color themes matching your website - or build and design a new form from scratch using your own copy and creative.
-- **Mobile responsiveness** – have your popups automatically adjusted to smaller screens to maintain great user experience and comply with Google requirements.
+- **Integrations**: connect Getsitecontrol to any email marketing app using built-in integrations or Zapier. Track widgets' performance with Google Analytics.
+- **Autoresponder**: send automated emails to those who subscribe to your newsletter, interact with a contact form, or fill out a survey.
+- **Handcrafted templates**: easily create customizable widgets that will perfectly match the design of your website and help you achieve a wide variety of marketing goals.
+- **CSS editor**: benefit from the built-in CSS editor to tailor the design of your popups. Use it to change text and color parameters, animation type, and page position.
+- **Mobile responsiveness**: adjust widget appearance for various mobile devices manually and make sure your message looks clear and coherent on smaller screens.
 - **A/B testing** – create up to 5 variations of the same widget and run a split test to find out which copy, creative, and call-to-action brings you higher ROI.
 - **Real-time statistics** – analyze widget performance right in the app dashboard using easy-to-read graphs and reports generated in real-time.
 
@@ -93,17 +85,17 @@ Getsitecontrol is the most versatile WordPress form builder you’ve ever tried.
 See it for yourself - we’ve compiled a list of the most essential tasks you can fulfill:
 
 
-- [Use a floating opt-in bar to collect emails](https://getsitecontrol.com/usecase/subscribe-widget/use-floating-opt-in-bar/)
-- [Create an exit intent opt-in popup](https://getsitecontrol.com/usecase/subscribe-widget/create-exit-intent-opt-popup/)
-- [Add a technical support form to your website](https://getsitecontrol.com/usecase/contact-widget/add-technical-support-form-your-site/)
-- [Add a callback form to your website](https://getsitecontrol.com/usecase/contact-widget/add-callback-form-your-website/)
+- [Use a floating opt-in bar to collect emails](https://getsitecontrol.com/usecase/place-email-capture-form-floating-bar/)
+- [Create an opt-in popup and boost email subscriptions](https://getsitecontrol.com/usecase/create-optin-popup-form/)
+- [Add a technical support request form to your website](https://getsitecontrol.com/usecase/add-technical-support-request-form-to-website/)
+- [Add a request callback form to your website](https://getsitecontrol.com/usecase/add-website-callback-form/)
 - [Add a job application form to your website](https://getsitecontrol.com/usecase/add-job-application-form-your-site/)
 - [Add a floating 'Contact us' button to your page](https://getsitecontrol.com/usecase/contact-us-button/)
-- [Notify website visitors of updates and changes](https://getsitecontrol.com/usecase/promo-widget/notify-site-visitors-updates-and-changes/)
+- [Create eye-catching website announcement bars](https://getsitecontrol.com/usecase/add-announcement-bars-to-notify-website-visitors/)
 - [Add a cookie consent message to your website](https://getsitecontrol.com/usecase/cookie-consent-message/)
 - [Add an exit survey to your website](https://getsitecontrol.com/usecase/website-exit-survey/)
 - [Add a customer satisfaction survey to your website](https://getsitecontrol.com/usecase/survey-widget/add-customer-satisfaction-survey-your-website/)
-- [Add live chat support to your website](https://getsitecontrol.com/usecase/add-live-chat-support-your-website/)
+
 
 
 == Installation ==
