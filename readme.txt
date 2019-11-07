@@ -101,10 +101,12 @@ See it for yourself - we’ve compiled a list of the most essential tasks you ca
 == Installation ==
 
 
-1. Upload the plugin files to the `/wp-content/plugins/getsitecontrol-wordpress-plugin` directory, or install the plugin through the WordPress plugins screen directly.
-2. Activate the plugin through the 'Plugins' screen in WordPress
-3. Select 'Getsitecontrol' in the left sidebar. If you already have a Getsitecontrol account, click on the 'Log in' link. If you are new to Getsitecontrol, fill out the form to create an account.
-4. Choose the website you want to add widgets to and click on the 'Manage widgets' button. You will be redirected to your Getsitecontrol dashboard where you can create, edit and activate widgets.
+1. Open the **Plugins** section in your WordPress dashboard and search for Getsitecontrol. Click **Install Now**.
+2. Activate the plugin using the **Activate** button. You will now see the new **Getsitecontrol** section in the left panel in your WordPress dashboard.
+3. If you already have a registered Getsitecontrol account, choose to **Sign in**. If you don't yet have an account with Getsitecontrol, choose to **Sign up** for a free account.
+4. If you have one website registered in your Getsitecontrol account, you will see the **Go to Dashboard** button.
+5. If you have more than one website registered in your Getsitecontrol account, you will be offered to choose the website you want to create widgets for. After selecting the necessary website from the list, click on the **Go to Dashboard** button.
+6. You will be redirected to your Getsitecontrol dashboard where you can create, edit and activate widgets. That’s it. You have successfully installed the Getsitecontrol plugin on your WordPress site.
 
 
 == Frequently Asked Questions ==
