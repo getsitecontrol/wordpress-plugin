@@ -6,7 +6,7 @@
 class GetsitecontrolWordPress {
 
 
-	public static $version          = '2.5.0';
+	public static $version          = '3.0.0';
 	public static $registerLink     = 'https://dash.getsitecontrol.com/api/v1/users/register';
 	public static $loginLink        = 'https://dash.getsitecontrol.com/api/v1/users/login?dual=1';
 	public static $googleSigninLink = 'https://dash.getsitecontrol.com/api/v1/socialauth-begin/google-oauth2/?mode=signin-popup&dual=1';

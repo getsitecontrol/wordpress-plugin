@@ -132,6 +132,10 @@ Yes, you must have a Getsitecontrol account to create and edit widgets. You can 
 
 == Changelog ==
 
+= 3.0.0 =
+Updated design. Updated compatibility.
+New Getsitecontrol version support
+
 
 = 2.3.0 =
 Updated images. Updated compatibility.
