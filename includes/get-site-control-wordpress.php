@@ -225,6 +225,10 @@ class GetsitecontrolWordPress {
 		self::check_access_die();
 
         $sitesLink = str_replace("{{API_DOMAIN}}", self::$settings['api_domain'], self::$sitesLink);
+        $relSitesPath = '/#/dashboard/sites/<SITE_ID>/widgets/list';
+        if (self::$settings['api_domain'] == 'dash.getsitecontrol.com'){
+            $relSitesPath = '/sites/<SITE_ID>/widgets';
+        }
         $autoLoginLink = str_replace("{{API_DOMAIN}}", self::$settings['api_domain'], self::$autoLoginLink);
 
 		$options                         = self::$settings;
@@ -232,7 +236,7 @@ class GetsitecontrolWordPress {
 		$options['clear_api_key_action'] = 'gsc_post_clear_api_key';
 		$options['api_url']              = $sitesLink;
 		$options['manage_site_link']     = $autoLoginLink . '?api_key=' .
-										   self::$settings['api_key'] . '&next=/#/dashboard/sites/<SITE_ID>/widgets/list';
+										   self::$settings['api_key'] . '&next='.$relSitesPath;
 
 		self::render_template(
 			'index',
