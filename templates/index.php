@@ -3,7 +3,6 @@
  * @var $url_exist bool
  * @var $options array
  * @var $data array
- * @var $add_site_link string
  */
 ?>
 
@@ -17,10 +16,6 @@
 					<select id="widget" name="gsc_widget" class="select-widget selected-toggled-block form-control" disabled="" required></select>
 				</div>
 
-				<a href="<?php echo esc_url( $add_site_link ); ?>" target="_blank"
-					   class="button-submit add-site ">
-						Add new site →
-				</a>
 				<div class="gotodashboard-block">
 					<a href="javascript:void(0);"
 					   class="gotodashboard-block button-submit disabled manage-widget-link manage__button-text" target="_blank">

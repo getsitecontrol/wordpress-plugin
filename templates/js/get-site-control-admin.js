@@ -339,7 +339,6 @@ jQuery(document).ready(function() {
         this.select = jQuery('#widget');
         this.selected_block = jQuery('.selected-toggled-block');
         this.manage_link = jQuery('.getsitecontrol .manage-widget-link');
-        this.add_site_link = jQuery('.getsitecontrol .add-site');
         this.site_selected_action = typeof GSC_OPTIONS !== 'undefined' ? GSC_OPTIONS.site_selected_action : null;
         this.api_url = typeof GSC_OPTIONS !== 'undefined' ? GSC_OPTIONS.api_url : null;
         this.api_key = typeof GSC_OPTIONS !== 'undefined' ? GSC_OPTIONS.api_key : null;
@@ -414,13 +413,7 @@ jQuery(document).ready(function() {
                 // Change text for multiple site case
                 jQuery('.manage__title').text('Select website');
                 jQuery('.manage__text').html('Choose the necessary website from the list or add a new one.');
-                this.add_site_link.addClass('disabled');
             }
-        } else {
-            jQuery('.gotodashboard-block, .select-website-block').hide();
-            jQuery('.manage__title').text('Add Site');
-            jQuery('.manage__text').html("You haven't added any websites yet.<br/> Please add the website you want to create widgets for.");
-            this.add_site_link.removeClass('disabled');
         }
 
         this.select.html(options);

@@ -238,7 +238,6 @@ class GetsitecontrolWordPress {
 			'index',
 			array(
 				'options'       => $options,
-				'add_site_link' => $autoLoginLink . '?api_key=' . self::$settings['api_key'] . '&next=/#/account/sites',
 			)
 		);
 	}
