@@ -338,6 +338,7 @@ class GetsitecontrolWordPress {
 		if ( self::post( 'gsc_clear_api_key' ) && self::check_access() ) {
 			self::$settings['api_key'] = null;
 			self::$settings['api_domain'] = null;
+			self::$settings['script'] = null;
 			echo wp_json_encode(
 				array(
 					'error'         => ! self::update( self::$settings ),
