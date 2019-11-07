@@ -9,7 +9,7 @@
 <div class="wrap getsitecontrol getsitecontrol-view-loading" data-manage="">
 	<div class="block-login-form">
 		<section class="sign-up-form ">
-			<h1 class="manage__title">Create and manage widgets</h1>
+			<h1 class="manage__title">Manage widgets</h1>
 			<p class="manage__text">Open your Getsitecontrol dashboard to create and edit widgets for your website.</p>
 			<div class="form-contents">
 				<div class="select-website-block">

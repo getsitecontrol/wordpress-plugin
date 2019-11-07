@@ -180,7 +180,7 @@
 }
 
 .sign-up-form .form-control {
-		display: block;
+    display: block;
     width: 100%;
     line-height: 1.5;
     background-color: #fff;
@@ -247,6 +247,9 @@
 
 	transition: none;
 	width: 100%;
+}
+.sign-up-form .form-control.select-widget{
+    padding-right: 40px;
 }
 .sign-up-form .button-submit:hover {
     border-color: #c5cad3;

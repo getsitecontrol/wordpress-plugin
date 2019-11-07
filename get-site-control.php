@@ -1,11 +1,8 @@
 <?php
 /**
- * Plugin Name: Popups, Lead Forms, Surveys, Live Chats WordPress Plugin - Getsitecontrol
+ * Plugin Name: Getsitecontrol widgets
  * Plugin URI: https://getsitecontrol.com/
- * Description: Getsitecontrol is an easy-to-use set of engagement tools for your WordPress website.
- * Online surveys, live chats, contact forms, email lead forms, promo messages,
- * follow and share social media tools - all managed from a single dashboard.
- * Seven of the most important engagement tools in a single time-saving WordPress plugin.
+ * Description: Getsitecontrol is an ultimate WordPress popup plugin. Collect emails, conduct online surveys, let website visitors reach you via a contact form, or promote your content with attention-grabbing modals. Increase ROI with exit popups, slide-ins, and notification bars.
  * Version: 2.5.0
  * Requires at least: 3.0.1
  * Tested up to: 5.2.4

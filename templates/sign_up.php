@@ -42,9 +42,10 @@
 				<div class="form-validation-general form-validation-message"></div>
 			</div>
 			<div class="form-legal">
-				By signing up, you agree to the<br/> <a target="_blank" href="https://getsitecontrol.com/terms/">Terms of Service</a> and <a target="_blank" href="https://getsitecontrol.com/privacy/">Privacy Policy</a>
+				By signing up, you agree to the<br/>
+				<a target="_blank" href="https://getsitecontrol.com/terms/">Terms of service</a> and <a target="_blank" href="https://getsitecontrol.com/privacy/">Privacy policy</a>
 				<br><br>
-				Already have an account?&nbsp; <a tabindex="7" href="<?php echo esc_url( $sign_in_link ); ?>">Sign In</a>
+				Already have an account?&nbsp; <a tabindex="7" href="<?php echo esc_url( $sign_in_link ); ?>">Sign in</a>
 			</div>
 
 		</section>

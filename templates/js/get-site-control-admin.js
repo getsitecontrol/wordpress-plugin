@@ -411,8 +411,8 @@ jQuery(document).ready(function() {
                this.selected_block.hide();
             } else {
                 // Change text for multiple site case
-                jQuery('.manage__title').text('Select website');
-                jQuery('.manage__text').html('Choose the necessary website from the list or add a new one.');
+                jQuery('.manage__title').text('Select website to manage widgets');
+                jQuery('.manage__text').html('Select website and open your Getsitecontrol dashboard to create and edit widgets.');
             }
         }
 
@@ -566,8 +566,12 @@ jQuery(document).ready(function() {
     * @returns {boolean}
     */
     function compare_urls(url1, url2) {
-        url1 = url1.replace('http://', '').replace('https://', '');
-        url2 = url2.replace('http://', '').replace('https://', '');
+        if (!url1 || !url2) {
+            return false
+        }
+
+        url1 = url1.replace(/https?:\/\//, '').replace(/\/$/,'');
+        url2 = url2.replace(/https?:\/\//, '').replace(/\/$/,'');
         return url1 == url2;
     }
 

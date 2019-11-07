@@ -38,8 +38,9 @@
 			</div>
 
 			<div class="form-legal">
-				<a href="https://getsitecontrol.com/reset/">Reset password</a>
-				or&nbsp;<a href="<?php echo esc_url( $sign_up_link ); ?>" tabindex="6">create an account</a>
+			    Forgot password? <a href="https://getsitecontrol.com/reset/">Reset password</a><br>
+			    <br>
+                New user? <a href="<?php echo esc_url( $sign_up_link ); ?>" tabindex="6">Create an account</a>
 			</div>
 
 		</section>
