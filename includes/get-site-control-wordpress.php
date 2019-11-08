@@ -369,9 +369,7 @@ class GetsitecontrolWordPress {
 		$socialParams                  =
 		'&name=' . rawurlencode( $data['name'] ) .
 		'&site=' . rawurlencode( $data['site'] ) .
-		'&timezone=' . rawurlencode( $options['timezone'] ) .
-		'&timezone_name=' . rawurlencode( $options['timezone_name'] ) .
-		'&utm_campaign=WordpressPlugin&utm_medium=plugin';
+		'&tracking=%7B%22context%22%3A%22utm_campaign%3DWordpressPlugin%26utm_medium%3Dplugin%22%7D'; // encodeURIComponent(JSON.stringify({context:"utm_campaign=WordpressPlugin&utm_medium=plugin"}))
 		$options['google_social_link'] = self::$googleSignupLink . $socialParams;
 
 		self::render_template(
