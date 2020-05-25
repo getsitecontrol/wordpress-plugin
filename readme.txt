@@ -94,15 +94,15 @@ Yes, you must have a Getsitecontrol account to create and edit widgets. You can 
 == Screenshots ==
 
 
-1. Manage your forms and popups from a single dashboard
-2. Add a WordPress email opt-in form to grow your email list
-3. Use a survey widget as a customer service feedback form
-4. Offer discounts to customers on your website to increase sales
-5. Learn what your customers think of your product with custom surveys
-6. Convince visitors to sign up leads with attractive lead magnets
-7. Place a custom WordPress contact form on your website
-8. Promote special offers and discounts with notification popups
-9. Announce new features and product updates on a website
+1. Add a WordPress email opt-in form to grow your email list
+2. Use a survey widget as a customer service feedback form
+3. Offer discounts to customers on your website to increase sales
+4. Learn what your customers think of your product with custom surveys
+5. Convince visitors to sign up leads with attractive lead magnets
+6. Place a custom WordPress contact form on your website
+7. Promote special offers and discounts with notification popups
+8. Announce new features and product updates on a website
+9. Manage your forms and popups from a single dashboard
 
 
 == Changelog ==
