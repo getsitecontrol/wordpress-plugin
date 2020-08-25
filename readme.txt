@@ -1,6 +1,6 @@
-=== Getsitecontrol - WordPress Popups, Email Optin Forms, Contact Forms, Website Surveys & CTA Popups ===
+=== Getsitecontrol - WordPress pop-ups, email opt-in forms, website surveys, contact forms & CTA pop-ups ===
 Contributors: getsitecontrol
-Tags: wordpress popup, popup plugin, optin popup, email form, newsletter popup, form builder, contact form, notification bar, top bar, floating bar, survey form, marketing, email marketing, woocommerce
+Tags: wordpress pop-up, pop-up plugin, opt-in pop-up, email form, newsletter popup, form builder, contact form, notification bar, fullscreen pop-up, poll, survey, survey form, email marketing, woocommerce
 Requires at least: 3.0.1
 Tested up to: 5.5
 Stable tag: trunk
@@ -8,94 +8,65 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
-Getsitecontrol is an ultimate WordPress popup plugin. Collect emails, conduct online surveys, let website visitors reach you via a contact form, or promote your content with attention-grabbing modals. Increase ROI with exit popups, slide-ins, and notification bars.
+Getsitecontrol is an ultimate WordPress pop-up plugin. Collect emails, conduct online surveys, let website visitors reach you via forms, or promote your content with attention-grabbing pop-ups. Place forms and pop-ups and grow ROI.
 
 
 == Description ==
 
 
-Getsitecontrol is your go-to plugin for any type of WordPress Popups. Easily create an email subscription form, a contact form, a survey form, or a notification modal for your site. Add exit-intent popups, floating notification bars, and slide-ins to deliver your call-to-action.
+Getsitecontrol is your go-to plugin for any type of WordPress pop-ups. Easily create an email subscription form, a contact form, a survey & poll form, or a notification pop-up for your website. Add exit-intent popups, floating notification bars, and slide-ins to deliver your call-to-action. Get 5 times more CTA clicks and increase your sales by 650%.
 
 
-The most versatile WordPress Popup Plugin you’ve ever tried:
-
-
-
-
-**GROW YOUR EMAIL LIST. SMARTER. FASTER**
-
-
-Build targeted email opt-in forms to convert website visitors into subscribers. Use floating bars, slide-ins, time-delayed or exit popups and send new leads directly to your email marketing app.
-
-
-
-**CREATE A CUSTOM CONTACT FORM FOR YOUR WEBSITE**
-
-
-Use templates and custom fields to create a contact form that meets your requirements. Receive instant notifications each time someone sends a message and respond directly from your email account.
-
-
-
-
-**LEARN MORE ABOUT YOUR AUDIENCE WITH ONLINE SURVEYS**
+**👀 Learn more about your audience with online surveys**
 
 
 Create website surveys to receive feedback on new product features, collect suggestions, evaluate your marketing strategies or find out why people abandon a particular webpage. Build quick polls or multi-page questionnaires, use ready-made templates or create custom forms.
 
 
-
-
-**DISPLAY YOUR CALLS-TO-ACTION WITH POPUPS, SLIDE-INS, AND BARS**
-
+**☝️ Display your calls-to-action with popups**
 
 Place eye-catching widgets with information about special offers, website updates, or anything noteworthy to encourage user engagement. It’s a great way to promote content, optimize conversions, and prevent cart abandonment.
 
 
+**✉️ Grow your email list. Smarter. Faster**
+
+Build targeted email opt-in forms to convert website visitors into subscribers. Use floating bars, slide-ins, time-delayed or exit popups and send new leads directly to your email marketing app.
 
 
-**INTEGRATE OPT-IN FORMS WITH THE EMAIL MARKETING SOFTWARE OF YOUR CHOICE**
+**👋 Create a custom contact form for your website**
+
+Use templates and custom fields to create a contact form that meets your requirements. Receive instant notifications each time someone sends a message and respond directly from your email account.
 
 
-Getsitecontrol easily integrates with 25+ email marketing solutions including MailChimp, AWeber, Constant Contact, Campaign Monitor, and more. Plus, there are over 1000 apps you can connect Getsitecontrol to using Zapier platform.
+**Why Getsitecontrol? 👇**
 
 
+- **Template gallery**
+Save time on widget creation with a large gallery of pre-designed popups. Just pick the ones you like and add them to your website within a couple of clicks.
+
+- **Mobile popups**
+Getsitecontrol helps you achieve impeccable popup appearance on mobile. Easily adapt widget design to smaller screens and ensure great user experience.
+
+- **CSS editor**
+Adjust the style of your widgets precisely using the built-in CSS editor. Access color, size, font, and position controls right in the dashboard.
+
+- **Intuitive interface**
+Create high-converting widgets with zero technical skills. Enjoy wizard-based popup builder with a clean interface, layout templates, and presets.
+
+- **Direct links to widgets**
+Expand your audience reach beyond just website visitors. Copy direct links to the forms you’ve created and share them via email, messengers, and social media.
+
+- **Picture & GIF search**
+Make your widgets pop! Access thousands of high-quality images from Unsplash and search for relevant GIFs right from the Getsitecontrol dashboard.
+
+- **Precise targeting**
+Segment the audience you want to reach based on the visitors location, device, UTM, and other parameters. Create in-depth targeting rules using AND and OR operators.
+
+- **Behavior triggers**
+Display widgets based on your website visitors’ behavior. Use session length, scroll depth, and exit-intent triggers; launch popups upon button or image clicks.
 
 
-**CORE FEATURES**
-
-
-- **On-page behavior triggers**: display popups based on how long a visitor has spent on a webpage, how much they have scrolled down, or other custom action-based parameters.
-- **Audience targeting**: choose who should see each widget. Target visitors by their language, location, device, browser, OS, traffic source, or UTM parameters. Create personalized messages by combining several parameters for different audiences.
-- **Exit-intent technology**: show popups right before a visitor abandons a webpage. Use this feature to offer a special last-minute deal or display a website exit survey.
-- **Integrations**: connect Getsitecontrol to any email marketing app using built-in integrations or Zapier. Track widgets' performance with Google Analytics.
-- **Autoresponder**: send automated emails to those who subscribe to your newsletter, interact with a contact form, or fill out a survey.
-- **Handcrafted templates**: easily create customizable widgets that will perfectly match the design of your website and help you achieve a wide variety of marketing goals.
-- **CSS editor**: benefit from the built-in CSS editor to tailor the design of your popups. Use it to change text and color parameters, animation type, and page position.
-- **Mobile responsiveness**: adjust widget appearance for various mobile devices manually and make sure your message looks clear and coherent on smaller screens.
-- **A/B testing** – create up to 5 variations of the same widget and run a split test to find out which copy, creative, and call-to-action brings you higher ROI.
-- **Real-time statistics** – analyze widget performance right in the app dashboard using easy-to-read graphs and reports generated in real-time.
-
-
-
-
-**HERE IS WHAT GETSITECONTROL POPUP PLUGIN CAN HELP YOU WITH**
-
-
-Getsitecontrol is the most versatile WordPress form builder you’ve ever tried. There are dozens of widget variations you can create to achieve dozens of marketing goals.
-See it for yourself - we’ve compiled a list of the most essential tasks you can fulfill:
-
-
-- [Use a floating opt-in bar to collect emails](https://getsitecontrol.com/usecase/place-email-capture-form-floating-bar/)
-- [Create an opt-in popup and boost email subscriptions](https://getsitecontrol.com/usecase/create-optin-popup-form/)
-- [Add a technical support request form to your website](https://getsitecontrol.com/usecase/add-technical-support-request-form-to-website/)
-- [Add a request callback form to your website](https://getsitecontrol.com/usecase/add-website-callback-form/)
-- [Add a job application form to your website](https://getsitecontrol.com/usecase/add-job-application-form-your-site/)
-- [Add a floating 'Contact us' button to your page](https://getsitecontrol.com/usecase/contact-us-button/)
-- [Create eye-catching website announcement bars](https://getsitecontrol.com/usecase/add-announcement-bars-to-notify-website-visitors/)
-- [Add a cookie consent message to your website](https://getsitecontrol.com/usecase/cookie-consent-message/)
-- [Add an exit survey to your website](https://getsitecontrol.com/usecase/website-exit-survey/)
-- [Add a customer satisfaction survey to your website](https://getsitecontrol.com/usecase/survey-widget/add-customer-satisfaction-survey-your-website/)
-
+[Check out ready-to-use templates](https://getsitecontrol.com/templates/)
 
 
 == Installation ==
@@ -114,22 +85,23 @@ See it for yourself - we’ve compiled a list of the most essential tasks you ca
 
 Do I need a Getsitecontrol account to use this popup plugin?
 
-
-Yes, you must have a Getsitecontrol account to create and edit widgets. You can sign up for free trial at https://getsitecontrol.com/ The plugin will only connect your Getsitecontrol account to your site.
+Yes, you must have a Getsitecontrol account to create and edit widgets. You can sign up for free trial at https://getsitecontrol.com/ The plugin will only connect your Getsitecontrol account to your website.
 
 
 == Screenshots ==
 
 
-1. Manage your forms and popups from a single dashboard
-2. Add a WordPress email opt-in form to grow your email list
-3. Use a survey widget as a customer service feedback form
-4. Offer discounts to customers on your website to increase sales
-5. Learn what your customers think of your product with custom surveys
-6. Convince visitors to sign up leads with attractive lead magnets
-7. Place a custom WordPress contact form on your website
-8. Promote special offers and discounts with notification popups
-9. Announce new features and product updates on a website
+1. Add a WordPress email opt-in form to grow your email list
+2. Use a survey widget as a customer service feedback form
+3. Offer discounts to customers on your website to increase sales
+4. Learn what your customers think of your product with custom surveys
+5. Convince visitors to sign up leads with attractive lead magnets
+6. Place a custom WordPress contact form on your website
+7. Promote special offers and discounts with notification popups
+8. Announce new features and product updates on a website
+9. Use a fullscreen opt-in popup to collect leads
+10. Notify visitors about new events and updates
+11. Manage your forms and popups from a single dashboard
 
 
 == Changelog ==
