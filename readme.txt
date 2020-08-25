@@ -2,7 +2,7 @@
 Contributors: getsitecontrol
 Tags: wordpress popup, popup plugin, optin popup, email form, newsletter popup, form builder, contact form, notification bar, top bar, floating bar, survey form, marketing, email marketing, woocommerce
 Requires at least: 3.0.1
-Tested up to: 5.2.4
+Tested up to: 5.5
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
