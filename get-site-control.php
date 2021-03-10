@@ -2,10 +2,10 @@
 /**
  * Plugin Name: Getsitecontrol widgets
  * Plugin URI: https://getsitecontrol.com/
- * Description: Getsitecontrol is an ultimate WordPress popup plugin. Collect emails, conduct online surveys, let website visitors reach you via a contact form, or promote your content with attention-grabbing modals. Increase ROI with exit popups, slide-ins, and notification bars.
+ * Description: Getsitecontrol popup builder — promotional and email popups, surveys and polls, contact and feedback forms.
  * Version: 3.0.0
  * Requires at least: 3.0.1
- * Tested up to: 5.5
+ * Tested up to: 5.7
  * Author: getsitecontrol
  * Author URI:  https://getsitecontrol.com/
  * License: GPL2
