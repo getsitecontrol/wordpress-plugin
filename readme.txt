@@ -105,13 +105,13 @@ Yes, you must have a Getsitecontrol account to create and edit widgets. You can 
 == Screenshots ==
 
 
-1. Add a email popup to grow your email list
+1. Add an email popup to grow your email list
 2. Use a survey popup as a customer service feedback form
 3. Offer discounts to customers on your website to increase sales
 4. Learn what your customers think of your product with custom surveys
 5. Use a fullscreen opt-in email popup to collect leads
 6. Place a custom contact form on your website
-7. Conduct a survey on your website launched by welcome popup
+7. Conduct a survey on your website launched by a welcome popup
 8. Announce new features and product updates
 9. Notify visitors about sales and discounts 
 10. Manage your popups from a single dashboard
