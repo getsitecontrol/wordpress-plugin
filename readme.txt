@@ -115,7 +115,7 @@ Yes, you must have a Getsitecontrol account to create and edit widgets. You can 
 8. Announce new features and product updates
 9. Notify visitors about sales and discounts 
 10. Manage your popups from a single dashboard
-11. Enjoy the popup builder with a clean interface, layout templates, and presets. 
+11. Enjoy the popup builder with a clean interface, layout templates, and presets 
 12. Track real-time results with a statistics report
 
 
