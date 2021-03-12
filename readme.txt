@@ -1,6 +1,6 @@
 === Getsitecontrol popup builder — promotional and email popups, surveys and polls, contact and feedback forms ===
 Contributors: getsitecontrol
-Tags: popup, popup plugin, popup builder, email popup, exit popup, survey, poll, contact form, feedback form
+Tags: popup, pop up, popup plugin, popup builder, email popup, exit popup, survey, poll, contact form, feedback form
 Requires at least: 3.0.1
 Tested up to: 5.7
 Stable tag: trunk
@@ -36,9 +36,8 @@ Create website surveys to receive feedback on new product features, collect sugg
 
 Use templates and custom fields to create a contact form that meets your requirements. Be in contact with your visitors to collect meaningful feedback. Receive instant notifications each time someone sends a message and respond directly from your email account.
 
-[Check out ready-to-use templates](https://getsitecontrol.com/templates/)
 
-**Why Getsitecontrol? 👇**
+== Why Getsitecontrol? ==
 
 **Handcrafted template gallery**
 Save time on widget creation with a large gallery of pre-designed popups. Just pick the ones you like and add them to your website within a couple of clicks.
@@ -76,7 +75,10 @@ Make your widgets pop! Access thousands of high-quality images from Unsplash and
 **That’s not all!**
 Break your popup into multiple steps, add success pages, split test up to 5 popups simultaneously, use API to display popups based on site logic, invite your teammates to craft better copy and design.
 
+
 [See all features](https://getsitecontrol.com/features/)
+[Check out templates](https://getsitecontrol.com/templates/)
+
 
 
 == Installation ==
@@ -97,9 +99,40 @@ Break your popup into multiple steps, add success pages, split test up to 5 popu
 
 **Do I need a Getsitecontrol account to use this popup plugin?**
 
-Yes, you must have a Getsitecontrol account to create and edit widgets. You can sign up for free trial at https://getsitecontrol.com/ The plugin will only connect your Getsitecontrol account to your website.
+Yes, you can create an account in the plugin or use the link below to get started right now.
 
-[Find answers in our help center](https://getsitecontrol.com/help/)
+[Create an account](https://getsitecontrol.com/start/)
+
+
+**Can I create popups for WooCommerce?**
+
+Yes, you can create WooCommerce popups using Getsitecontrol popup plugin.
+
+[Find ecommerce popup examples](https://getsitecontrol.com/templates/)
+
+
+**What integrations do you have?**
+
+You can connect 40+ email marketing and business software: Google Sheets, Google Analytics, MailChimp, Hubspot, Intercom, Klaviyo, Infusionsoft, Zapier and receive data submitted through popups using Webhooks.
+
+[See all integrations](https://getsitecontrol.com/help/integrations/)
+
+
+**Do your popups work on mobile?**
+
+Yes, Getsitecontrol popups are mobile optimized and automatically switch to the responsive view when viewed on mobile devices.
+
+
+**Can I edit popup's CSS code?**
+
+Yes, use the built-in CSS editor to tailor the design of your popups.
+
+
+**Do you offer an API?**
+
+Yes, we do! Find out how you can use it to send collected data to third-party applications, display popups based on link clicks and more. 
+
+[Read a developer documentation](https://getsitecontrol.com/help/javascript-api/)
 
 
 == Screenshots ==
