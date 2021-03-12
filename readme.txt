@@ -17,30 +17,30 @@ Getsitecontrol is an ultimate popup plugin. Collect emails, conduct surveys, cre
 Getsitecontrol is your go-to popup builder for any type of website popups. Easily create an email subscription popup, a contact form, a survey & poll, or a promotional popup for your website. Add exit-intent popups, floating notification bars, and slide-ins to deliver your calls-to-action. Use it to boost sales, grow your mailing list, prevent shopping cart abandonment, and collect insights from your customers. Zero technical knowledge required!
 
 
-**Promotional popups**
+== Smart popups ==
 
+**Promotional popups**
 Place eye-catching popups with special offers, discounts or coupons. It’s a great way to promote sales, boost conversions, and prevent cart abandonment.
 
 
 **Email subscription popups**
-
 Build targeted email opt-in popups to convert website visitors into subscribers. Use floating bars, slide-ins, time-delayed or exit popups and send new leads directly to your email marketing app.
 
 
 **Online surveys and polls**
-
 Create website surveys to receive feedback on new product features, collect suggestions, evaluate your marketing strategies or find out why people abandon a particular webpage. Build quick polls or multi-page questionnaires, use ready-made templates or create custom surveys.
 
 
 **Сontact and feedback forms**
-
 Use templates and custom fields to create a contact form that meets your requirements. Be in contact with your visitors to collect meaningful feedback. Receive instant notifications each time someone sends a message and respond directly from your email account.
+
+[Check out all templates](https://getsitecontrol.com/templates/)
 
 
 == Why Getsitecontrol? ==
 
-**Handcrafted template gallery**
-Save time on widget creation with a large gallery of pre-designed popups. Just pick the ones you like and add them to your website within a couple of clicks.
+**Handcrafted templates**
+Save time on popup creation with a large gallery of templates. Just pick the ones you like and add them to your website within a couple of clicks.
 
 **Mobile popups**
 Getsitecontrol helps you achieve impeccable popup appearance on mobile. Easily adapt widget design to smaller screens and ensure great user experience.
@@ -75,10 +75,7 @@ Make your widgets pop! Access thousands of high-quality images from Unsplash and
 **That’s not all!**
 Break your popup into multiple steps, add success pages, split test up to 5 popups simultaneously, use API to display popups based on site logic, invite your teammates to craft better copy and design.
 
-
 [See all features](https://getsitecontrol.com/features/)
-[Check out templates](https://getsitecontrol.com/templates/)
-
 
 
 == Installation ==
