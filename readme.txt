@@ -1,6 +1,6 @@
 === Getsitecontrol popup builder — promotional and email popups, surveys and polls, contact and feedback forms ===
 Contributors: getsitecontrol
-Tags: popup, pop up, popup plugin, popup builder, email popup, exit popup, survey, poll, contact form, feedback form
+Tags: popup, exit popup, email popup, survey plugin, prevent abandonment, pop up, popup plugin, popup builder, survey, poll, contact form, feedback form
 Requires at least: 3.0.1
 Tested up to: 5.7
 Stable tag: trunk
@@ -13,9 +13,18 @@ Getsitecontrol is an ultimate popup plugin. Collect emails, conduct surveys, cre
 
 == Description ==
 
+Getsitecontrol is your go-to popup builder for any type of website popups. Whether you need subscribers, sales, customers or survey responses,
+popups will help you boost website conversion rates. Easily create an email subscription popup, a contact form, a survey & poll, or a promotional popup for your website. Add exit-intent popups, floating notification bars, and slide-ins to deliver your calls-to-action.
 
-Getsitecontrol is your go-to popup builder for any type of website popups. Easily create an email subscription popup, a contact form, a survey & poll, or a promotional popup for your website. Add exit-intent popups, floating notification bars, and slide-ins to deliver your calls-to-action. Use it to boost sales, grow your mailing list, prevent shopping cart abandonment, and collect insights from your customers. Zero technical knowledge required!
+• Boost sales
+• Grow your mailing list
+• Prevent cart abandonment
+• Collect insights
+• Get meaningful feedback
 
+✓ Zero technical knowledge required
+✓ Built-in template gallery
+✓ Live-chat 24/7 support
 
 == Smart popups ==
 
