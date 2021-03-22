@@ -13,8 +13,7 @@ Getsitecontrol is an ultimate popup plugin. Collect emails, conduct surveys, cre
 
 == Description ==
 
-Getsitecontrol is your go-to popup builder for any type of website popups. Whether you need subscribers, sales, customers or survey responses,
-popups will help you boost website conversion rates. Easily create an email subscription popup, a contact form, a survey & poll, or a promotional popup for your website. Add exit-intent popups, floating notification bars, and slide-ins to deliver your calls-to-action.
+Getsitecontrol is your go-to popup builder for any type of website popups. Whether you need subscribers, sales, customers or survey responses, popups will help you boost website conversion rates. Easily create an email subscription popup, a contact form, a survey & poll, or a promotional popup for your website. Add exit-intent popups, floating notification bars, and slide-ins to deliver your calls-to-action.
 
 • Boost sales
 • Grow your mailing list
