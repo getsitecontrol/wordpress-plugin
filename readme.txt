@@ -1,6 +1,6 @@
-=== Getsitecontrol popup builder — promotional and email popups, surveys and polls, contact and feedback forms ===
+=== Getsitecontrol popup plugin — promotional and email popups, surveys and polls, contact and feedback forms ===
 Contributors: getsitecontrol
-Tags: popup, exit popup, email popup, survey plugin, prevent abandonment, pop up, popup plugin, popup builder, survey, poll, contact form, feedback form
+Tags: popup, exit popup, email popup, popup plugin, survey plugin, prevent abandonment, pop up, popup builder, survey, poll, contact form, feedback form
 Requires at least: 3.0.1
 Tested up to: 5.7
 Stable tag: trunk
@@ -8,24 +8,24 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
-Getsitecontrol is an ultimate popup plugin. Collect emails, conduct surveys, create exit popups, or promote sales and discounts with attention-grabbing popups. Place popups and grow sales.
+Getsitecontrol is an ultimate WordPress popup plugin for collecting emails, conducting surveys, creating exit popups, and promoting sales and discounts with attention-grabbing popups. Place popups and grow sales.
 
 
 == Description ==
 
-Getsitecontrol is your go-to popup builder for any type of website popups. Whether you need subscribers, sales, customers or survey responses, popups will help you boost website conversion rates. Easily create an email subscription popup, a contact form, a survey & poll, or a promotional popup for your website. Add exit-intent popups, floating notification bars, and slide-ins to deliver your calls-to-action.
+Getsitecontrol is your go-to WordPress popup plugin for any type of website popups. Whether you need subscribers, sales, customers or survey responses, popups will help you boost website conversion rates. Easily create an email subscription popup, a contact form, a survey & poll, or a promotional popup for your website. Add exit-intent popups, floating notification bars, and slide-ins to deliver your calls-to-action.
 
 • Boost sales
 • Grow your mailing list
 • Prevent cart abandonment
-• Collect insights
-• Get meaningful feedback
+• Promote sales and discounts
+• Collect insights & feedback
 
 ✓ Zero technical knowledge required
 ✓ Built-in template gallery
 ✓ Live-chat 24/7 support
 
-== Smart popups ==
+== Smart WordPress popups ==
 
 **Promotional popups**
 Place eye-catching popups with special offers, discounts or coupons. It’s a great way to promote sales, boost conversions, and prevent cart abandonment.
@@ -45,7 +45,7 @@ Use templates and custom fields to create a contact form that meets your require
 [Check out all templates](https://getsitecontrol.com/templates/)
 
 
-== Why Getsitecontrol? ==
+== Why Getsitecontrol popup plugin? ==
 
 **Handcrafted templates**
 Save time on popup creation with a large gallery of templates. Just pick the ones you like and add them to your website within a couple of clicks.
