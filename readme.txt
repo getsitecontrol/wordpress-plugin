@@ -75,10 +75,10 @@ Use interactive charts to get a bird's eye view of the popup performance over ti
 View response summary by form or by field. See how people respond to your questions based on their location or device and view context info about each respondent.
 
 **Multiple popup positions**
-Based on your goals, you can pick any of these webpage positions for your popup: аloating and sticky bars, various slide-ins, floating buttons, modal popups, fullscreens.
+Based on your goals, you can pick any of these webpage positions for your popup: floating and sticky bars, various slide-ins, floating buttons, modal popups, fullscreens.
 
 **Picture & GIF search**
-Make your widgets pop! Access thousands of high-quality images from Unsplash and search for relevant GIFs right from the Getsitecontrol dashboard.
+Make your WordPress popups stand out! Access thousands of high-quality images from Unsplash and search for relevant GIFs right from the Getsitecontrol dashboard.
 
 **That’s not all!**
 Break your popup into multiple steps, add success pages, split test up to 5 popups simultaneously, use API to display popups based on site logic, invite your teammates to craft better copy and design.
@@ -123,7 +123,7 @@ You can connect 40+ email marketing and business software: Google Sheets, Google
 [See all integrations](https://getsitecontrol.com/help/integrations/)
 
 
-**Do your popups work on mobile?**
+**Do your WordPress popups work on mobile?**
 
 Yes, Getsitecontrol popups are mobile optimized and automatically switch to the responsive view when viewed on mobile devices.
 
