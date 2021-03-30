@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Getsitecontrol widgets
+ * Plugin Name: Getsitecontrol popups
  * Plugin URI: https://getsitecontrol.com/
  * Description: Getsitecontrol is an ultimate popup plugin. Collect emails, conduct surveys, create exit popups, or promote sales and discounts with attention-grabbing popups. Place popups and grow sales.
  * Version: 3.0.0
