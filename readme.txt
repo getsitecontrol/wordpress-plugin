@@ -1,4 +1,4 @@
-=== Wordpress popup plugin by Getsitecontrol — promo and email popups, surveys and polls, contact and feedback forms ===
+=== Popup plugin by Getsitecontrol — promotional and email popups, surveys, feedback and order forms, exit popups ===
 Contributors: getsitecontrol
 Tags: popup, exit popup, email popup, popup plugin, survey plugin, prevent abandonment, pop up, popup builder, survey, poll, contact form, feedback form
 Requires at least: 3.0.1
@@ -8,15 +8,15 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
-Getsitecontrol is an ultimate WordPress popup plugin for collecting emails, conducting surveys, creating exit popups, and promoting sales and discounts with attention-grabbing popups. Place popups and grow sales.
+Getsitecontrol is an ultimate WordPress popup plugin that helping you to collect emails, conduct surveys, create exit popups, and promote sales and discounts with attention-grabbing popups. Place popups and grow sales.
 
 
 == Description ==
 
-Getsitecontrol is your go-to **WordPress popup plugin** for any type of website popups. Whether you need subscribers, sales, customers or survey responses, popups will help you boost website conversion rates. Easily create an email subscription popup, a contact form, a survey & poll, or a promotional popup for your website. Add exit-intent popups, floating notification bars, and slide-ins to deliver your calls-to-action.
+Getsitecontrol is your go-to **WordPress popup plugin** for any type of website popups. Whether you need subscribers, sales, customers or survey responses, popups will help you boost website conversion rates. Easily create an email subscription popup, a contact form, a survey & poll, an order form or a promotional popup for your website. Add exit-intent popups, floating notification bars, and slide-ins to deliver your calls-to-action.
 
 
-== What are WordPress popups for? ==
+== What are popups for? ==
 
 • Boost sales
 • Grow your mailing list
@@ -29,10 +29,10 @@ Getsitecontrol is your go-to **WordPress popup plugin** for any type of website 
 ✓ Live-chat 24/7 support
 
 
-== What WordPress popups are there? ==
+== What popups are there? ==
 
 **Promotional popups**
-Place eye-catching popups with special offers, discounts or coupons. It’s a great way to promote sales, boost conversions, and prevent cart abandonment.
+Place eye-catching popups with special offers, discounts or coupons. It’s a great way to promote sales, boost conversions, offer upsells and cross-sells, and prevent cart abandonment.
 
 
 **Email subscription popups**
@@ -54,7 +54,7 @@ Use templates and custom fields to create a contact form that meets your require
 **Handcrafted templates**
 Save time on popup creation with a large gallery of templates. Just pick the ones you like and add them to your website within a couple of clicks.
 
-**Mobile-friendly WordPress popups**
+**Mobile-friendly popups**
 Getsitecontrol helps you achieve impeccable popup appearance on mobile. Easily adapt widget design to smaller screens and ensure great user experience.
  
 **CSS editor**
