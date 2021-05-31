@@ -15,6 +15,7 @@ Getsitecontrol is an ultimate WordPress popup plugin that helping you to collect
 
 Getsitecontrol is your go-to **WordPress popup plugin** for any type of website popups. Whether you need subscribers, sales, customers or survey responses, popups will help you boost website conversion rates. Easily create an email subscription popup, a contact form, a survey & poll, an order form or a promotional popup for your website. Add exit-intent popups, floating notification bars, and slide-ins to deliver your calls-to-action.
 
+https://youtu.be/A3WBiP8VWgI
 
 == What are popups for? ==
 
@@ -28,7 +29,6 @@ Getsitecontrol is your go-to **WordPress popup plugin** for any type of website 
 ✓ Built-in template gallery
 ✓ Live-chat 24/7 support
 
-https://youtu.be/A3WBiP8VWgI
 
 == What popups are there? ==
 
