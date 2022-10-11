@@ -2,7 +2,7 @@
 Contributors: getsitecontrol
 Tags: popup, exit popup, email popup, popup plugin, survey plugin, prevent abandonment, pop up, popup builder, survey, poll, contact form, feedback form
 Requires at least: 3.0.1
-Tested up to: 5.7
+Tested up to: 6.0
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
