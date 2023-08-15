@@ -1,165 +1,176 @@
-=== Popup plugin by Getsitecontrol — promotional and email popups, surveys, feedback and order forms, exit popups ===
+=== Getsitecontrol — Email Marketing Plugin | Popup Maker, Automations & Newsletters ===
 Contributors: getsitecontrol
-Tags: popup, exit popup, email popup, popup plugin, survey plugin, prevent abandonment, pop up, popup builder, survey, poll, contact form, feedback form
+Tags: email marketing, email marketing plugin, popup maker, popup builder, popup contact form, popup plugin, exit popup plugin, newsletter, newsletter subscription form, newsletter plugin, lead generation, marketing automation, opt-in forms, survey maker, survey plugin
 Requires at least: 3.0.1
-Tested up to: 6.2
+Tested up to: 6.3
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
-Getsitecontrol is an ultimate WordPress popup plugin that helping you to collect emails, conduct surveys, create exit popups, and promote sales and discounts with attention-grabbing popups. Place popups and grow sales.
+Complete email marketing toolset with a powerful popup builder on board. Generate leads with email opt-in forms, send professional newsletters, build automations.
+
 
 
 == Description ==
 
-Getsitecontrol is your go-to **WordPress popup plugin** for any type of website popups. Whether you need subscribers, sales, customers or survey responses, popups will help you boost website conversion rates. Easily create an email subscription popup, a survey & poll, an order form or a promotional popup for your website. Add exit-intent popups, floating notification bars, and slide-ins to deliver your calls-to-action.
+**Send promo newsletters, build email marketing automations.
+Create popups to capture emails, promote deals, and survey visitors.**
 
-https://youtu.be/gjJSj1uV0xk
+[Getsitecontrol](https://getsitecontrol.com/) is an **Email Marketing plugin** that houses everything you need to generate leads and turn them into returning customers.
 
-== What are popups for? ==
+Send email newsletters to promote products, announce special offers, drive traffic to your website, and boost sales. Craft professional emails using a full-featured editor and a modern email template gallery.
 
-• Boost sales
-• Grow your mailing list
-• Prevent cart abandonment
-• Promote sales and discounts
-• Collect insights & feedback
+Create newsletter popups, announcement bars, promo banners, coupon boxes, survey and contact form that align with your website's branding.
 
-✓ Zero technical knowledge required
-✓ Built-in template gallery
-✓ Live-chat 24/7 support
+Tag new subscribers based on their interests, send follow-ups, and keep them engaged using email marketing automations.
 
 
-== What popups are there? ==
+https://youtu.be/reJ7uFqhl0I
 
-**Promotional popups**
-Place eye-catching popups with special offers, discounts or coupons. It’s a great way to promote sales, boost conversions, offer upsells and cross-sells, and prevent cart abandonment.
-
-
-**Email subscription popups**
-Build targeted email opt-in popups to convert website visitors into subscribers. Use floating bars, slide-ins, time-delayed or exit popups and send new leads directly to your email marketing app.
+Works well with WooCommerce. Support is available 24/5 via live chat.
 
 
-**Online surveys and polls**
-Create website surveys to receive feedback on new product features, collect suggestions, evaluate your marketing strategies or find out why people abandon a particular webpage. Build quick polls or multi-page questionnaires, use ready-made templates or create custom surveys.
+★★★★★
+
+> "It is fairly easy to set up and works great for my store! Plus if you want to make things more customizable they have a help center to edit the CCS." — [Gozzy Gxmz store](https://www.gozzygxmz.com/)
 
 
-**Сontact and feedback forms**
-Use templates and custom fields to create a contact form that meets your requirements. Be in contact with your visitors to collect meaningful feedback. Receive instant notifications each time someone sends a message and respond directly from your email account.
-
-[Check out all templates](https://getsitecontrol.com/templates/)
+== Widgets ==
 
 
-== Why Getsitecontrol popup plugin? ==
+Create pop-up widgets, inline forms, sticky bars, slide-ins, sidebars, and panels to engage with your website visitors.
 
-**Handcrafted templates**
-Save time on popup creation with a large gallery of templates. Just pick the ones you like and add them to your website within a couple of clicks.
+Explore the collection of templates for email opt-in forms, promo banners, coupons, and surveys. Pick one and customize it within minutes.
 
-**Mobile-friendly popups**
-Getsitecontrol helps you achieve impeccable popup appearance on mobile. Easily adapt widget design to smaller screens and ensure great user experience.
- 
-**CSS editor**
-Adjust the style of your widgets precisely using the built-in CSS editor. Access color, size, font, and position controls right in the dashboard.
+https://youtu.be/3MRGuymk4MM
 
-**Precise targeting**
-Segment the audience you want to reach based on the visitors location, device, UTM, and other parameters. Create in-depth targeting rules using AND and OR operators.
+**Here is what you can do with widgets**
 
-**Behavior triggers**
-Display widgets based on your website visitors’ behavior. Use session length, scroll depth, and exit-intent triggers; launch popups upon button or image clicks.
+• Grow your email list
+• Promote sales and deals
+• Prevent abandonment
+• Make announcements
+• Collect feedback
 
-**Integrations**
-Connect any popular email marketing software (e.g. Mailchimp) and add new subscribers to the chosen list or send the collected data to Google Sheets spreadsheets.
 
-**Intuitive interface**
-Create high-converting widgets with zero technical skills. Enjoy wizard-based popup builder with a clean interface, layout templates, and presets.
 
-**Performance charts**
-Use interactive charts to get a bird's eye view of the popup performance over time. Use filters to identify performance trends among different audience segments.
+== Contacts ==
 
-**Response report**
-View response summary by form or by field. See how people respond to your questions based on their location or device and view context info about each respondent.
+Organize your email contacts in a structured database. Tag them through email automations or upon signup based on interests, newsletter preferences, or other attributes.
 
-**Multiple popup positions**
-Based on your goals, you can pick any of these webpage positions for your popup: floating and sticky bars, various slide-ins, floating buttons, modal popups, fullscreens.
+Build audience segments and launch personalized email campaigns.
 
-**Picture & GIF search**
-Make your WordPress popups stand out! Access thousands of high-quality images from Unsplash and search for relevant GIFs right from the Getsitecontrol dashboard.
+https://youtu.be/02sJl2C3tVk
 
-**That’s not all!**
-Break your Wordpress popup into multiple steps, add success pages, split test up to 5 popups simultaneously, use API to display popups based on site logic, invite your teammates to craft better copy and design.
+**Here is what you can do with contacts**
 
-[See all features](https://getsitecontrol.com/features/)
+• Manage your contact database
+• Benefit from built-in filters
+• Apply field mapping for tagging
+• Review interaction history
+• Plan well-targeted campaigns
+
+
+
+== Automations ==
+
+Build email marketing automations to convert your subscribers into customers on autopilot. Send emails and tag your contacts when they complete an email form, join your list, or click through links in your emails.
+
+Save time and enhance your ROI from email marketing.
+
+https://youtu.be/viOHnWmFLso
+
+**Here is what you can do with automations**
+
+• Welcome new subscribers
+• Recommend products or services
+• Re-engage dormant customers
+• Create reusable sequences
+• Add tags based on email interactions
+
+
+== Broadcasts ==
+
+Create email broadcasts for all contacts or a particular audience segment to keep them informed about the company's news, promote sales, products, and deals.
+
+Craft professional-looking emails and send them right away or schedule them for a later date.
+
+https://youtu.be/FS4TZgNr2j4
+
+**Here is what you can do with broadcasts**
+
+• Announce new product launches
+• Notify customers about back-in-stock items
+• Boost email CTR with product cards
+• Add a countdown to create a sense of urgency
+• Drive sales with personalized campaigns
+
 
 
 == Installation ==
 
 
-1. Open the **Plugins** section in your WordPress dashboard and search for Getsitecontrol. Click **Install Now**.
-2. Activate the plugin using the **Activate** button. You will now see the new **Getsitecontrol** section in the left panel in your WordPress dashboard.
-3. If you already have a registered Getsitecontrol account, choose to **Sign in**. If you don't yet have an account with Getsitecontrol, choose to **Sign up**.
-4. If you have one website registered in your Getsitecontrol account, you will see the **Go to Dashboard** button.
-5. If you have more than one website registered in your Getsitecontrol account, you will be offered to choose the website you want to create popups for. After selecting the necessary website from the list, click on the **Go to Dashboard** button.
-6. You will be redirected to your Getsitecontrol dashboard where you can create, edit and activate popups. That’s it. You have successfully installed the Getsitecontrol popup plugin on your WordPress site.
+1. Navigate to the **Plugins** section in your WordPress dashboard and search for GetsiteControl. Click **Install Now**.
+2. Activate the plugin using the **Activate** button. A new **GetsiteControl** section will appear in the left panel of your WordPress dashboard.
+3. If you already have a registered GetsiteControl account, opt to **Sign In**. If you don't have a GetsiteControl account yet, choose to **Sign Up**.
+4. If you have a single website registered in your GetsiteControl account, the **Go to Dashboard** button will appear.
+5. For multiple registered websites in your GetsiteControl account, you can select the relevant site from the list and click the **Go to Dashboard** button.
+6. You will be redirected to your GetsiteControl dashboard.
+7. Success! The GetsiteControl plugin is now installed on your WordPress site, and you can start building your first campaign.
 
-[Read the detailed guide](https://getsitecontrol.com/help/install-widgets-wordpress/)
+[Refer to the detailed guide](https://getsitecontrol.com/help/install-widgets-wordpress/)
 
 
 == Frequently Asked Questions ==
 
 
-**Do I need a Getsitecontrol account to use this popup plugin?**
+**Do I need a Getsiteсontrol account to use this plugin?**
 
-Yes, you can create an account in the plugin or use the link below to get started right now.
+Yes, you do. You can create an account during plugin installation, or create an account first and then install the plugin afterward.
 
-[Create an account](https://getsitecontrol.com/start/)
+[Create an account now](https://getsitecontrol.com/start/)
 
+**Can I use Getsiteсontrol for WooCommerce?**
 
-**Can I create popups for WooCommerce?**
+Absolutely. Similar to WooCommerce, this plugin is tailored for ecommerce brands selling products or services online, and the two platforms work well together.
 
-Yes, you can create WooCommerce popups using Getsitecontrol popup plugin.
+[Explore ecommerce widget templates](https://getsitecontrol.com/templates/)
 
-[Find ecommerce popup examples](https://getsitecontrol.com/templates/)
+**What integrations are available?**
 
+You can use built-in integrations to connect email marketing apps like Mailchimp, AWeber, Constant Contact, and others. You can also integrate Getsitecontrol with Google Analytics, Google Sheets, CRMs, and automation tools such as Hubspot, Omnisend, Intercom, and Keap. Additionally, you can integrate Getsiteсontrol with numerous apps from the Zapier library and receive data submitted through website forms using Webhooks.
 
-**What integrations do you have?**
-
-You can connect 40+ email marketing and business software: Google Sheets, Google Analytics, MailChimp, Hubspot, Intercom, Klaviyo, Infusionsoft, Zapier and receive data submitted through popups using Webhooks.
-
-[See all integrations](https://getsitecontrol.com/help/integrations/)
-
-
-**Do popups work on mobile?**
-
-Yes, Getsitecontrol popups are mobile optimized and automatically switch to the responsive view when viewed on mobile devices.
-
-
-**Can I edit popup's CSS code?**
-
-Yes, use the built-in CSS editor to tailor the design of your popups.
-
+[See the full list of integrations](https://getsitecontrol.com/help/integrations/)
 
 **Do you offer an API?**
 
-Yes, we do! Find out how you can use it to send collected data to third-party applications, display popups based on link clicks and more. 
+Yes, we do. Discover how you can use it to transmit collected data to third-party applications, trigger popups based on link clicks, and more.
 
-[Read a developer documentation](https://getsitecontrol.com/help/javascript-api/)
+[Read the developer's documentation](https://getsitecontrol.com/help/javascript-api/)
+
+**How can I get support?**
+
+Our dedicated team is available 24 hours a day, 5 days a week via live chat in your GetsiteControl dashboard or directly on the website. You can also email us with your questions, explore our [Help Center](https://getsitecontrol.com/help/), or join our [Slack community](https://getsitecontrol.com/slack).
+
+
 
 
 == Screenshots ==
 
 
-1. Coupon popups
-2. Email subscription popups
-3. Cross-sell popups
-4. Upsell popups
-5. Survey popups
-6. Prevent abandonment
-7. Announcement popups
-8. Discount popups
-9. Mobile popups
-10. Manage your popups from a single dashboard
-11. Enjoy the popup builder with a clean interface, layout templates, and presets 
-12. Track real-time results with a statistics report
+1. Use a large popup template gallery to get started faster
+2. Create gorgeous popups with an intuitive editor
+3. Choose page-level and audience targeting settings
+4. Maintain your contact database
+5. Build audience segments to plan personalized campaigns
+6. View conversion & interaction history of each contact
+7. Send beautiful, engaging email broadcasts
+8. Use a full-featured editor to craft professional emails
+9. Send broadcasts at once or schedule them for later
+10. Choose among 3 types of email marketing automations
+11. Send emails or tag your contacts on autopilot
+12. Use conditions to target the right audience segment
 
 
 == Changelog ==
