@@ -43,7 +43,7 @@ Create pop-up widgets, inline forms, sticky bars, slide-ins, sidebars, and panel
 
 Explore the collection of templates for email opt-in forms, promo banners, coupons, and surveys. Pick one and customize it within minutes.
 
-https://youtu.be/3MRGuymk4MM
+https://youtu.be/YJzvozSDso0
 
 **Here is what you can do with widgets**
 
@@ -79,7 +79,7 @@ Build email marketing automations to convert your subscribers into customers on 
 
 Save time and enhance your ROI from email marketing.
 
-https://youtu.be/viOHnWmFLso
+https://youtu.be/lkxMJWMLmTs
 
 **Here is what you can do with automations**
 
