@@ -2,7 +2,7 @@
 Contributors: getsitecontrol
 Tags: email marketing, email marketing plugin, popup maker, popup builder, popup contact form, popup plugin, exit popup plugin, newsletter, newsletter subscription form, newsletter plugin, lead generation, marketing automation, opt-in forms, survey maker, survey plugin
 Requires at least: 3.0.1
-Tested up to: 6.3
+Tested up to: 6.8
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -96,7 +96,7 @@ Create email broadcasts for all contacts or a particular audience segment to kee
 
 Craft professional-looking emails and send them right away or schedule them for a later date.
 
-https://youtu.be/Mf60VoX9XB8
+https://youtu.be/EfSIyTF74Eo
 
 **Here is what you can do with broadcasts**
 

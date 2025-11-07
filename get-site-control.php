@@ -5,7 +5,7 @@
  * Description: Getsitecontrol is an ultimate popup plugin. Collect emails, conduct surveys, create exit popups, or promote sales and discounts with attention-grabbing popups. Place popups and grow sales.
  * Version: 3.0.0
  * Requires at least: 3.0.1
- * Tested up to: 5.7
+ * Tested up to: 6.8
  * Author: getsitecontrol
  * Author URI:  https://getsitecontrol.com/
  * License: GPL2
