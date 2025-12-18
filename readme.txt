@@ -26,7 +26,7 @@ Create newsletter popups, announcement bars, promo banners, coupon boxes, survey
 Tag new subscribers based on their interests, send follow-ups, and keep them engaged using email marketing automations.
 
 
-https://youtu.be/reJ7uFqhl0I
+https://youtu.be/7H1yfN87dX0
 
 Works well with WooCommerce. Support is available 24/5 via live chat.
 
